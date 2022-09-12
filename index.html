@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="section-wrapper">
+      <div class="calendar-section">
+        <div class="calendar-header">
+          <div class="current-month"></div>
+          <div class="header-btns">
+            <button class="backButton">Back</button>
+            <button class="nextButton">Next</button>
+          </div>
+        </div>
+
+        <div class="week-days">
+          <div class="w-day">Sunday</div>
+          <div class="w-day">Monday</div>
+          <div class="w-day">Tuesday</div>
+          <div class="w-day">Wednesday</div>
+          <div class="w-day">Thursday</div>
+          <div class="w-day">Friday</div>
+          <div class="w-day">Saturday</div>
+        </div>
+
+        <div class="calendar-display"></div>
+      </div>
+      <div class="event-section-wrapper"></div>
+
+      <!-- --------------------------MODAL--------------------------------- -->
+      <div id="newEventModal">
+        <div id="modal-wrapper">
+          <div id="modal-inputs-title">
+            <h2>New Event</h2>
+            <div id="modal-inputs">
+              <input id="appt-time" type="time" />
+              <input id="eventTitleInput" placeholder="Event Title" />
+            </div>
+          </div>
+
+          <div id="modal-btns">
+            <button id="saveButton">Save</button>
+            <button id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="deleteEventModal">
+        <h2>Event</h2>
+
+        <p id="eventText"></p>
+
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Close</button>
+      </div>
+
+      <div id="modalBackDrop"></div>
+
+      <!-- --------------------------End Of MODAL--------------------------------- -->
+    </div>
+  </body>
+</html>
